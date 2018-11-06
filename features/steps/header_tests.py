@@ -9,7 +9,7 @@ use_step_matcher('re')
 
 @given('I am on the homepage')
 def step_impl(context):
-    context.driver = webdriver.Chrome(/Users/Vladislav_Aks/Desktop/Test_auto/features/steps/chromedriver)
+    context.driver = webdriver.Chrome()
     page = HomePageElement(context.driver)
     context.driver.get(page.url)
 
